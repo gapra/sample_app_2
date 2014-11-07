@@ -1,9 +1,14 @@
 <% provide(:title, "Home") %>
 
-<h1>Sample App</h1>
-<p>
-  This is the home page for the
-  <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
+<section class="section home">
+	<div class="container">
+		<h1 class="mtop-4">Welcome to Ruby on Rails Sample App</h1>
+		<h4 class="mbottom-2">
+		  This is the home page for the
+		  <%= link_to 'Ruby on Rails Sample app on GitHub', 'https://github.com/gapra/sample_app_2' %>
+		  sample application.
+		</h4>
+		<%= link_to "Sign Up Now", signup_path, class: "gp-btn basic-btn" %>
+	</div>
+</section>
 	
